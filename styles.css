@@ -1,3 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Open Sans", sans-serif;
+  color: #4d4d4f;
 }
+
+/* Page header */
+.page-header-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.header-container {
+  position: relative;
+  width: 100%;
+  /* max-width: 1200px; */
+  max-width: 1450px;
+  height: 100%;
+  min-height: 320px;
+}
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/hero-image.png");
+  background-repeat: no-repeat;
+  /* background-size: 100% auto; */
+  background-size: cover;
+}
+.header-title {
+  color: #013757;
+  position: absolute;
+  top: 1.5%;
+  left: 12%;
+  /* width: 100%; */
+  padding-top: 10.5%;
+  font-weight: bolder;
+  font-size: 2.07vw;
+}
+@media (min-width: 1200px) {
+  .header-title {
+    font-size: 1.56rem;
+  }
+}
+
+/* Disputes Optimization */
+.disputes-optimization-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem 5rem 2rem;
+}
+.optimization-title-l1 {
+  color: #013757;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+.optimization-title-l2 {
+  color: #013757;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.7rem;
+}
+.optimization-description-image-container {
+  display: flex;
+  margin: 0 8rem;
+}
+.optimization-text {
+  margin-right: 2rem;
+  font-weight: 300;
+  width: 50%;
+}
+.optimization-image {
+  width: 100%;
+  max-width: 40rem;
+}
+
+/* Disputes Management */
+.disputes-management-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5rem 5rem 5rem;
+}
+.management-title-l1 {
+  color: #013757;
+  font-size: 2.5rem;
+  /* margin-top: 5rem; */
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+.management-title-l2 {
+  color: #013757;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+}
+.management-image-list-container {
+  display: flex;
+  justify-content: center;
+}
+.management-list {
+  margin-top: 1.9rem;
+  margin-left: 1rem;
+  max-width: 30%;
+}
+.management-list-title {
+  font-size: 1rem;
+  color: #00549f;
+  margin-bottom: 0.5rem;
+}
+.bi-check-circle-fill {
+  font-size: 1.8rem;
+  color: #bfd730;
+  margin-right: 0.5rem;
+}
+li {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  /* margin-bottom: 0.3rem; */
+}
+.management-list-bullet {
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+/* Testimonial */
+.testimonials-carousel-section {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+/* .testimonial-title {
+  background-image: url("./images/testimonial-banner.png");
+  width: 100%;
+  height: 100%;
+}
+.testimonial-title {
+  margin: 0;
+} */
+.carousel {
+  position: relative;
+}
+.testimonial-title-container {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  z-index: 1;
+}
+.testimonial-title {
+  /* position: absolute;
+  top: 15%;
+  width: 100%; */
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.testimonial-title-secondary {
+  /* position: absolute;
+  top: 15%;
+  width: 100%; */
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+.carousel-inner {
+  width: 100%;
+  max-height: 400px !important;
+}
+.d-block {
+  position: relative;
+  /* text-align: center; */
+  margin: 0 auto;
+}
+.overlay-txt {
+  position: absolute;
+  top: 200px;
+  /* left: 50%; */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+
+  /* transform: translate(-50%, -50%); */
+  color: #fff;
+  width: 75%;
+}
+
+/* Phases */
+.upcoming-phases-section {
+  margin: 0 2rem 5rem 2rem;
+}
+.phases-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.phases-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  flex: 33.33333%;
+  padding: 0 6rem;
+}
+.phases-title {
+  color: #013757;
+  font-size: 2.5rem;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+}
+.phases-image {
+  max-width: 100px;
+  margin-bottom: 1.2rem;
+}
+.phases-icon-text {
+  font-size: 1rem;
+}
+.phases-icon-description {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.future-phases-title {
+  color: #013757;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Phases */
+.faqs-section {
+  text-align: center;
+}
+.faq-title {
+  color: #013757;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #4d4d4f !important;
+  background-color: #ffffff !important;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%) !important;
+}
+
+.accordion .accordion-item:nth-of-type(odd) .accordion-button {
+  background-color: #e4f4fe !important;
+}
+
+.accordion-button {
+  font-size: 16px !important;
+  /* border: 0px solid rgba(0, 0, 0, 0.125) !important; */
+}
+button.accordion-button.collapsed {
+  padding: 16px 100px !important;
+}
+.btn-outline-primary {
+  margin-top: 1.5rem;
+  color: #013757 !important;
+  border-color: #013757 !important;
+  padding: 0.3rem 1.5rem !important;
+}
+
+/* Form */
