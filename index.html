@@ -34,6 +34,7 @@
       crossorigin="anonymous"
     />
     <title>PSCU Landing Page</title>
+    <script defer src="./script.js"></script>
   </head>
   <body>
     <!-- Page header/banner -->
@@ -296,6 +297,7 @@
             <p class="phases-icon-description">Fraud disputes</p>
           </div>
         </div>
+        <!-- Future phases -->
         <h2 class="future-phases-title">
           Future phases will include the additional functionality:
         </h2>
@@ -332,6 +334,7 @@
           </div>
         </div>
       </section>
+      <!-- FAQ section -->
       <section class="faqs-section">
         <h1 class="faq-title">Frequently Asked Questions (FAQs)</h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -419,23 +422,23 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
+            <h2 class="accordion-header" id="flush-headingFour">
               <button
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo"
+                data-bs-target="#flush-collapseFour"
                 aria-expanded="false"
-                aria-controls="flush-collapseTwo"
+                aria-controls="flush-collapseFour"
               >
                 What are the key timeframes for general availability of the new
                 disputes management solution?
               </button>
             </h2>
             <div
-              id="flush-collapseTwo"
+              id="flush-collapseFour"
               class="accordion-collapse collapse"
-              aria-labelledby="flush-headingTwo"
+              aria-labelledby="flush-headingFour"
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
@@ -449,7 +452,141 @@
         </div>
         <button type="button" class="btn btn-outline-primary">See More</button>
       </section>
+      <!-- Form section -->
+      <section class="form-section">
+        <h1 class="form-title">Questions?</h1>
+        <h2 class="form-text">
+          Please submit the form below and a team member will reach out.
+        </h2>
+        <form id="form" class="form-container" action="./thank-you-page.html">
+          <div class="form-wrapper">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label class="form-label" for="inputFirstName">Name</label>
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  id="inputFirstName"
+                  placeholder="First"
+                />
+                <div
+                  class="invalid-feedback form-first-name"
+                  id="form-first-name"
+                ></div>
+              </div>
+              <div class="form-group col-md-6 no-label">
+                <label class="form-label empty-label" for="inputLastName"
+                  >Last</label
+                >
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  id="inputLastName"
+                  placeholder="Last"
+                />
+                <div class="invalid-feedback" id="form-last-name"></div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label class="form-label" for="inputPhoneNumber"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  id="inputPhone"
+                  placeholder="555-555-5555"
+                />
+                <div class="invalid-feedback" id="form-phone"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <label class="form-label" for="inputEmail3">Email</label>
+                <input
+                  type="email"
+                  class="form-control shadow-none"
+                  id="inputEmail"
+                  placeholder="Email"
+                />
+                <div class="invalid-feedback form-email" id="form-email"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="exampleFormControlTextarea1"
+                >Ask a Question</label
+              >
+              <textarea
+                class="form-control shadow-none"
+                id="questionTextArea"
+                rows="8"
+              ></textarea>
+              <div
+                class="invalid-feedback form-text-area"
+                id="form-text-area"
+              ></div>
+            </div>
+            <div class="form-btn-container">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="col1">
+        <div class="logo-address">
+          <img
+            class="col1-logo"
+            src="./images/pscu_logo_footer.png"
+            alt="Logo"
+            width="100"
+            height="50"
+          />
+          <ul>
+            <li class="col1-list">844.367.7728</li>
+            <li class="col1-list">Send an email</li>
+            <li class="col1-list">2021 Annual Report</li>
+          </ul>
+        </div>
+        <p class="col1-address">
+          Corporate Headquarters: 560 Carillon Parkway | St. Petersburg, FL
+          33716
+        </p>
+      </div>
+      <div class="col2">
+        <ul>
+          <li class="col1-list">News & Events</li>
+          <li class="col1-list">MemberConnect</li>
+          <li class="col1-list">Privacy Policy</li>
+          <li class="col1-list">Ethics</li>
+          <li class="col1-list">Careers</li>
+        </ul>
+      </div>
+      <div class="col3">
+        <p class="col3-title">Follow PSCU</p>
+        <div class="col3-socials">
+          <img
+            class="col3-img"
+            src="./images/linkedin-icon.png"
+            alt="linkedIn"
+          />
+          <img
+            class="col3-img"
+            src="./images/facebook-icon.png"
+            alt="facebook"
+          />
+          <img class="col3-img" src="./images/twitter-icon.png" alt="twitter" />
+          <img
+            class="col3-img"
+            src="./images/instagram-icon.png"
+            alt="instagram"
+          />
+        </div>
+        <p class="col3-copyright">
+          Copyright @Copyright 2007-2022 PSCU. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
     <!-- Bootstrap Carousel -->
     <script

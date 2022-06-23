@@ -16,7 +16,6 @@ body {
 .header-container {
   position: relative;
   width: 100%;
-  /* max-width: 1200px; */
   max-width: 1450px;
   height: 100%;
   min-height: 320px;
@@ -29,7 +28,6 @@ body {
   height: 100%;
   background: url("./images/hero-image.png");
   background-repeat: no-repeat;
-  /* background-size: 100% auto; */
   background-size: cover;
 }
 .header-title {
@@ -37,7 +35,6 @@ body {
   position: absolute;
   top: 1.5%;
   left: 12%;
-  /* width: 100%; */
   padding-top: 10.5%;
   font-weight: bolder;
   font-size: 2.07vw;
@@ -92,7 +89,6 @@ body {
 .management-title-l1 {
   color: #013757;
   font-size: 2.5rem;
-  /* margin-top: 5rem; */
   margin-bottom: 0.7rem;
   font-weight: 500;
 }
@@ -125,7 +121,6 @@ li {
   list-style: none;
   display: flex;
   align-items: flex-start;
-  /* margin-bottom: 0.3rem; */
 }
 .management-list-bullet {
   font-weight: lighter;
@@ -138,14 +133,6 @@ li {
   width: 100%;
   margin-bottom: 5rem;
 }
-/* .testimonial-title {
-  background-image: url("./images/testimonial-banner.png");
-  width: 100%;
-  height: 100%;
-}
-.testimonial-title {
-  margin: 0;
-} */
 .carousel {
   position: relative;
 }
@@ -156,17 +143,11 @@ li {
   z-index: 1;
 }
 .testimonial-title {
-  /* position: absolute;
-  top: 15%;
-  width: 100%; */
   text-align: center;
   color: #ffffff;
   font-size: 2.5rem;
 }
 .testimonial-title-secondary {
-  /* position: absolute;
-  top: 15%;
-  width: 100%; */
   text-align: center;
   color: #ffffff;
   font-size: 1.2rem;
@@ -178,19 +159,16 @@ li {
 }
 .d-block {
   position: relative;
-  /* text-align: center; */
   margin: 0 auto;
 }
 .overlay-txt {
   position: absolute;
   top: 200px;
-  /* left: 50%; */
   left: 0;
   right: 0;
   margin: 0 auto;
   text-align: center;
 
-  /* transform: translate(-50%, -50%); */
   color: #fff;
   width: 75%;
 }
@@ -252,24 +230,134 @@ li {
   color: #4d4d4f !important;
   background-color: #ffffff !important;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%) !important;
+  padding: 1rem 6rem !important;
 }
-
+.accordion-body {
+  padding: 1rem 6rem !important;
+}
 .accordion .accordion-item:nth-of-type(odd) .accordion-button {
   background-color: #e4f4fe !important;
+}
+.accordion .accordion-item:nth-of-type(even) .accordion-button {
+  background-color: #ffffff !important;
 }
 
 .accordion-button {
   font-size: 16px !important;
-  /* border: 0px solid rgba(0, 0, 0, 0.125) !important; */
 }
 button.accordion-button.collapsed {
   padding: 16px 100px !important;
 }
 .btn-outline-primary {
-  margin-top: 1.5rem;
+  margin: 1.5rem 0;
   color: #013757 !important;
   border-color: #013757 !important;
   padding: 0.3rem 1.5rem !important;
 }
 
 /* Form */
+.form-section {
+  padding-top: 5rem;
+  background-color: #e4f4fe;
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.form-text {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #013757 !important;
+}
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-wrapper {
+  width: 500px;
+}
+.form-btn-container {
+  text-align: center;
+}
+.btn-primary {
+  margin: 1.5rem 0;
+  color: #ffffff !important;
+  border-color: #013757 !important;
+  background-color: #013757 !important;
+  padding: 0.5rem 4rem !important;
+}
+.form-label {
+  font-weight: bolder;
+  color: #4d4d4f;
+}
+.form-row {
+  align-items: flex-start;
+}
+.form-control {
+  border: 0;
+}
+
+.form-control input[type="text"],
+.form-control select[type="text"] {
+  color: #4d4d4f !important;
+}
+.empty-label {
+  color: #e4f4fe;
+}
+.text-danger {
+  color: #dc3545 !important;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+  background-color: #013757;
+}
+
+.logo-address {
+  display: flex;
+  padding: 3rem 3rem 2rem 3rem;
+}
+.col1-list {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin: 1rem 2.5rem;
+  cursor: pointer;
+}
+.col1-address {
+  font-size: 0.6rem;
+  color: #4d4d4f;
+  margin-left: 3rem;
+}
+.col2 {
+  margin: 3rem 3rem 2rem 3rem;
+}
+.col3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 4rem 3rem;
+}
+.col3-title {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+.col3-copyright {
+  margin-top: 4rem;
+  font-size: 0.6rem;
+  color: #4d4d4f;
+}
+.col3-img {
+  margin: 1rem 0.5rem;
+}
