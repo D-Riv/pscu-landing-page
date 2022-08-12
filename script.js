@@ -5,16 +5,19 @@ const email = document.getElementById("inputEmail");
 const textArea = document.getElementById("questionTextArea");
 const form = document.getElementById("form");
 
+// Phone validation function
 function validatePhoneNumber(number) {
   const regex = /^(1\s|1|)?((\(\d{3}\))|\d{3})(\-|\s)?(\d{3})(\-|\s)?(\d{4})$/;
   return regex.test(String(number).toLowerCase());
 }
+// Email validation function
 function validateEmail(emailValue) {
   const emailRegex =
     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return emailRegex.test(String(emailValue).toLowerCase());
 }
 
+//Form submission event handler and validation check
 form.addEventListener("submit", (e) => {
   let messages = [];
 

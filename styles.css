@@ -16,9 +16,9 @@ body {
 .header-container {
   position: relative;
   width: 100%;
-  max-width: 1450px;
+  max-width: 1800px;
   height: 100%;
-  min-height: 320px;
+  min-height: 380px;
 }
 .header-image {
   position: absolute;
@@ -33,17 +33,18 @@ body {
 .header-title {
   color: #013757;
   position: absolute;
-  top: 1.5%;
+  top: 50%;
+  bottom: 0;
   left: 12%;
-  padding-top: 10.5%;
-  font-weight: bolder;
-  font-size: 2.07vw;
+  right: 0;
+  margin: 0 auto;
+  font-size: 2.4rem;
 }
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .header-title {
     font-size: 1.56rem;
   }
-}
+} */
 
 /* Disputes Optimization */
 .disputes-optimization-section {
@@ -58,25 +59,49 @@ body {
   margin-top: 4rem;
   margin-bottom: 0.7rem;
   font-weight: 500;
+  text-align: center;
 }
 .optimization-title-l2 {
   color: #013757;
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 1.7rem;
+  text-align: center;
 }
 .optimization-description-image-container {
   display: flex;
-  margin: 0 8rem;
+  margin: 0 3rem;
+  max-width: 1210px;
 }
 .optimization-text {
-  margin-right: 2rem;
-  font-weight: 300;
+  /* margin-right: 2rem; */
+  font-weight: 200;
   width: 50%;
 }
+.optimization-image-container {
+  width: 50%;
+  margin-left: 2rem;
+}
 .optimization-image {
-  width: 100%;
-  max-width: 40rem;
+  /* width: 50%; */
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 750px) {
+  .optimization-description-image-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .optimization-text {
+    width: 100%;
+  }
+  .optimization-image-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .optimization-image {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Disputes Management */
@@ -91,18 +116,21 @@ body {
   font-size: 2.5rem;
   margin-bottom: 0.7rem;
   font-weight: 500;
+  text-align: center;
 }
 .management-title-l2 {
   color: #013757;
   font-size: 1.2rem;
   font-weight: 300;
   margin-bottom: 4rem;
+  text-align: center;
 }
 .management-image-list-container {
   display: flex;
   justify-content: center;
 }
 .management-list {
+  text-align: left;
   margin-top: 1.9rem;
   margin-left: 1rem;
   max-width: 30%;
@@ -111,6 +139,7 @@ body {
   font-size: 1rem;
   color: #00549f;
   margin-bottom: 0.5rem;
+  padding-left: 32px;
 }
 .bi-check-circle-fill {
   font-size: 1.8rem;
@@ -127,6 +156,16 @@ li {
   margin: 0;
   margin-top: 0.5rem;
 }
+.management-image {
+  max-width: 100%;
+  height: auto;
+}
+/* @media (max-width: 1050px) {
+  .management-image-list-container {
+    flex-direction: column;
+    align-items: center;
+  }
+} */
 
 /* Testimonial */
 .testimonials-carousel-section {
